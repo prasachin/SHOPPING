@@ -1,0 +1,23 @@
+@media screen and (max-width:1000px){
+    body{
+        background-color: lightgoldenrodyellow;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .logo{
+        justify-content: center;
+    }
+    nav ul{
+        justify-content: center;
+    }
+    header{
+        height: 25vh;
+    }
+    .search{
+        justify-content: center;
+    }
+    .card-items img{
+        width: 150px;
+    }
+}

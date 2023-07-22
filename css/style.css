@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Tektur:wght@600&display=swap');
+
+:root {
+    --main-bg-color: brown;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.progress {
+    background-color: rgb(32, 40, 42);
+    height: 3px;
+    /* position: sticky; */
+    animation: sac 5s ease-in-out 1;
+}
+
+header {
+    height: 8vh;
+    width: 100vw;
+    background-color: rgb(32, 40, 42);
+    position: fixed;
+    /* z-index: 2px; */
+}
+
+nav {
+    display: flex;
+}
+
+nav ul {
+    height: 8vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(13, 4, 184);
+    font-family: 'Bungee Spice', cursive;
+    font-style: italic;
+    padding: 0px 15px;
+}
+
+nav ul li {
+    list-style-type: none;
+    padding: 0px 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Tektur', cursive;
+}
+
+nav ul li a:hover {
+    color: rgb(4, 243, 75);
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    padding: 2px 25px;
+}
+
+.search {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+
+}
+
+.search input {
+    width: 30vw;
+    height: 25px;
+    border-radius: 6px;
+    margin: 0px 5px 0px 42px;
+    padding: 0px 25px;
+}
+
+.search button {
+    font-family: 'Tektur', cursive;
+}
+
+.login {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bungee Spice', cursive;
+    padding: 0px 65px;
+}
+
+.container {
+    min-height: calc(100vh - 8vh - 6vh);
+}
+
+.slider {
+    margin: auto;
+    /* padding: auto; */
+    width: 90vw;
+    overflow: hidden;
+}
+
+.card {
+    width: 95vw;
+    margin: auto;
+}
+
+.card h2 {
+    font-family: 'Tektur', cursive;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    overflow: scroll;
+
+}
+
+.card-items {
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0px 18px;
+}
+
+footer {
+    height: 6vh;
+    background-color: var(--main-bg-color);
+    color: white;
+    font-family: 'Tektur', cursive;
+    /* position: fixed; */
+}
+
+@keyframes sac {
+    0% {
+        width: 5vw;
+        background-color: rgb(244, 4, 4);
+    }
+
+    50% {
+        width: 80vw;
+        background-color: rgb(244, 4, 4);
+    }
+
+    100% {
+        width: 100vw;
+        background-color: rgb(244, 4, 4);
+    }
+}
